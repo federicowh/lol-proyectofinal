@@ -631,14 +631,6 @@ a {
       .tienda .container .card .comprar a:hover {
         color: #fbc02d; }
 
-@keyframes cambiar {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0 50%; } }
-
 /*Página Registro*/
 .contenedor {
   background-image: url("../media/img/galeria/banner 3.jpg");
