@@ -70,7 +70,7 @@ $transicion-media: all 0.8s;
             }
 
             .estrellas{
-                    color: #fbc02d;
+                color: $color-amarillo;
             }
 
             .precio span{
@@ -86,11 +86,10 @@ $transicion-media: all 0.8s;
 
                 a{
                     color: white;
-                    font-weight: bold;
-                    font-style: italic;
+                    @include italica-negrita;
                 }
                 a:hover{
-                    color: #fbc02d;
+                    color: $color-amarillo;
                 }
             }
         }

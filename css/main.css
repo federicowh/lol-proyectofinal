@@ -615,7 +615,7 @@ a {
     .tienda .container .card .texto2 {
       color: greenyellow; }
     .tienda .container .card .estrellas {
-      color: #fbc02d; }
+      color: #EBA272; }
     .tienda .container .card .precio span {
       color: white;
       font-weight: bold;
@@ -626,10 +626,10 @@ a {
       border-bottom-left-radius: 15px; }
       .tienda .container .card .comprar a {
         color: white;
-        font-weight: bold;
-        font-style: italic; }
+        font-style: italic;
+        font-weight: bold; }
       .tienda .container .card .comprar a:hover {
-        color: #fbc02d; }
+        color: #EBA272; }
 
 /*Página Registro*/
 .contenedor {
