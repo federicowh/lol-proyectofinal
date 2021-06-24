@@ -34,7 +34,7 @@ a {
   z-index: 100;
   user-select: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
-  transition: .5s; }
+  transition: all 0.8s; }
   .header .header-toggle {
     color: white;
     font-size: 1.5rem;
@@ -46,6 +46,7 @@ a {
 
 /*Redes Sociales del encabezado*/
 .social {
+  background-color: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -64,7 +65,7 @@ a {
     transition: all 0.2s;
     transform: scale(1.9, 1.9); }
 
-/*Menu Lateral*/
+/*Menú Lateral*/
 .l-navbar {
   background-color: black;
   position: fixed;
@@ -74,55 +75,60 @@ a {
   left: -30%;
   padding: .5rem 1rem 0 0;
   z-index: 100;
+  user-select: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
-  transition: .5s; }
+  transition: all 0.8s; }
   .l-navbar nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     overflow: hidden; }
-    .l-navbar nav .nav_logo,
-    .l-navbar nav .nav_link {
+    .l-navbar nav .nav-logo,
+    .l-navbar nav .nav-link {
       display: grid;
       grid-template-columns: max-content max-content;
       justify-content: left;
       align-items: center;
       column-gap: .6rem;
       padding: .5rem 0 .5rem .5rem; }
-    .l-navbar nav .nav_logo {
+    .l-navbar nav .nav-logo {
       margin-bottom: 3rem; }
-      .l-navbar nav .nav_logo .nav_logo-img {
-        width: 54px;
-        height: 54px; }
-      .l-navbar nav .nav_logo .nav_logo-name {
+      .l-navbar nav .nav-logo .nav-logo-img {
+        width: 50px;
+        height: 50px;
+        transition: all 0.8s; }
+      .l-navbar nav .nav-logo .nav-logo-img:hover {
+        transition: all 0.8s;
+        transform: rotate(360deg); }
+      .l-navbar nav .nav-logo .nav-logo-name {
         color: white;
         text-decoration: overline 2px solid #EBA272;
         font-size: 0.9rem;
         font-style: italic;
         font-weight: bold;
         transition: all 0.2s; }
-      .l-navbar nav .nav_logo .nav_logo-name:hover {
+      .l-navbar nav .nav-logo .nav-logo-name:hover {
         color: #EBA272;
         transition: all 0.2s; }
-    .l-navbar nav .nav_link {
+    .l-navbar nav .nav-link {
       color: white;
       position: relative;
       padding-left: 1.5rem;
       margin-bottom: 2rem;
       transition: all 0.2s; }
-      .l-navbar nav .nav_link .nav_icon {
+      .l-navbar nav .nav-link .nav-icon {
         font-size: 1.25rem;
         transition: all 0.2s; }
-      .l-navbar nav .nav_link .nav_icon:hover {
+      .l-navbar nav .nav-link .nav-icon:hover {
         color: #EBA272;
         transition: all 0.2s;
         transform: scale(2, 2); }
-      .l-navbar nav .nav_link .nav_name {
+      .l-navbar nav .nav-link .nav-name {
         margin-left: 1rem;
         font-style: italic;
         font-weight: bold; }
-      .l-navbar nav .nav_link .nav_name:hover {
+      .l-navbar nav .nav-link .nav-name:hover {
         color: #EBA272;
         transition: all 0.2s; }
 
