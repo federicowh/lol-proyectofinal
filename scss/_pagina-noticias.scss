@@ -81,6 +81,7 @@ $transicion-media: all 0.8s;
     }
 }
 
+/*MediaQueries Página Noticias*/
 @media only screen and (max-width: 1250px){
     .noticias{
         flex-flow: column wrap;

@@ -521,6 +521,7 @@ a {
     .noticias .noticias-titulos #noticias-link {
       text-align: center; }
 
+/*MediaQueries Página Noticias*/
 @media only screen and (max-width: 1250px) {
   .noticias {
     flex-flow: column wrap; }
