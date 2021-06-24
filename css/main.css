@@ -32,14 +32,15 @@ a {
   left: 0;
   padding: 0 1rem;
   z-index: 100;
+  user-select: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   transition: .5s; }
-  .header .header_toggle {
+  .header .header-toggle {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.2s; }
-  .header .header_toggle:hover {
+  .header .header-toggle:hover {
     transition: all 0.2s;
     color: #EBA272; }
 

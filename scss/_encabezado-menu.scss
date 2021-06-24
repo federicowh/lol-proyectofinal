@@ -23,7 +23,6 @@ $transicion-media: all 0.8s;
     justify-content: space-between;
 
     position: fixed;
-
     width: 100%;
     height: 3rem;
     top: 0;
@@ -32,16 +31,17 @@ $transicion-media: all 0.8s;
     padding: 0 1rem;
     z-index: 100;
 
+    user-select: none;
+
     box-shadow: $sombras;
     transition: .5s;
-
-    .header_toggle{
+    .header-toggle{
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
         transition: $transicion-rapida;
     }
-    .header_toggle:hover{
+    .header-toggle:hover{
         transition: $transicion-rapida;
         color: $color-amarillo;
     }
