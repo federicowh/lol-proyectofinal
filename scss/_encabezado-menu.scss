@@ -13,6 +13,9 @@ $transicion-media: all 0.8s;
     opacity: 0;
     transition: opacity ease-out .7s;
 }
+@mixin bordes-r{
+    border-radius: 10px;
+}
 
 /*Encabezado*/
 .header{

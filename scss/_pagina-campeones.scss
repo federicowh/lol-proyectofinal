@@ -13,6 +13,13 @@ $transicion-media: all 0.8s;
     opacity: 0;
     transition: opacity ease-out .7s;
 }
+@mixin bordes-r{
+    border-radius: 10px;
+}
+@mixin bordes-costados{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
 .campeones{
     display: flex;
@@ -21,12 +28,13 @@ $transicion-media: all 0.8s;
     align-items: center;
 
     width: 100%;
-
     margin: auto;
     margin-bottom: 30px;
 
     user-select: none;
+
     box-shadow: $sombras;
+    transition: $transicion-media;
 
     div{
         transition: $transicion-media;
@@ -36,8 +44,7 @@ $transicion-media: all 0.8s;
 
             margin: 25px 15px 0px 15px;
 
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            @include bordes-costados;
         }
         h5{
             background-color: black;

@@ -435,7 +435,8 @@ a {
   margin: auto;
   margin-bottom: 30px;
   user-select: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+  transition: all 0.8s; }
   .campeones div {
     transition: all 0.8s; }
     .campeones div img {
