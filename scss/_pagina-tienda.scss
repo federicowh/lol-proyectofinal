@@ -24,7 +24,6 @@ $transicion-media: all 0.8s;
         }
         .card{
             outline: none;
-            user-select: none;
             animation: change 10s ease-in-out infinite;
             @keyframes gradient{
                 0%{
@@ -42,9 +41,13 @@ $transicion-media: all 0.8s;
             background: linear-gradient(-45deg, #000000, #000000, #bfbfbf, #bfbfbf);
             background-size: 400% 400%;
             animation: gradient 6s ease infinite;
-            border-radius: 20px;
             transition: transform .3s;
+
             margin-bottom: 30px;
+
+            user-select: none;
+
+            border-radius: 20px;
             box-sizing: $sombras;
             img{
                 width: 80%;
@@ -53,8 +56,7 @@ $transicion-media: all 0.8s;
             h5{
                 color: white;
                 font-size: 1.8rem;
-                font-style: italic;
-                font-weight: bold;
+                @include italica-negrita;
             }
 
             .texto1{
