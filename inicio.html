@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Web no oficial de la Liga Profesional de Fútbol de la Asociación del Fútbol Argentino. Organizadora de los torneos de la primera división en el país.">
+    <meta name="keywords" content="FÚTBOL,TORNEOS,LIGAS,DEPORTE,NOTICIAS,ARGENTINA">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--Estilos Propios-->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!--Estilos Propios-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--Título/Ícono-->
+    <title>League of Legends</title>
+    <link rel="shortcut icon" href="media/img/logo/logolol2.png" width="32" height="32px">
+</head>
+<body id="body-pd">
+
+    <!--Encabezado de las Páginas-->
+    <header class="header" id="header">
+        <div class="header_toggle"><i class='bx bx-menu' id="header-toggle"></i></div>
+
+        <!--Redes Sociales-->
+        <div class="social">
+            <a href="https://www.facebook.com/LeagueofLegendsLatino"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/lollatam"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/juegalol/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/RiotGamesLatino"><i class="fab fa-youtube"></i></a>
+            <a href="https://es.linkedin.com/company/riot-games"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.reddit.com/r/leagueoflegends/"><i class="fab fa-reddit-square"></i></a>
+        </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> 
+                <a href="inicio.html" class="nav_logo"> 
+                    <img src="media/img/logo/logolol2.png" class="nav_logo-img" alt="Logo Lol">
+                    <span class="nav_logo-name">League of Legends</span> 
+                </a>
+
+            <div class="nav_list"> 
+                <a href="inicio.html" class="nav_link"> 
+                    <i class='bx bx-home nav_icon'></i> 
+                    <span class="nav_name">Inicio</span> 
+                </a> 
+
+                <a href="campeones.html" class="nav_link"> 
+                    <i class='bx bx-group nav_icon'></i> 
+                    <span class="nav_name">Campeones</span> 
+                </a> 
+
+                <a href="noticias.html" class="nav_link"> 
+                    <i class='bx bx-news nav_icon'></i> 
+                    <span class="nav_name">Noticias</span> 
+                </a> 
+
+                <a href="multimedia.html" class="nav_link"> 
+                    <i class='bx bx-slideshow nav_icon'></i> 
+                    <span class="nav_name">Multimedia</span> 
+                </a>
+
+                <a href="tienda.html" class="nav_link"> 
+                    <i class='bx bxs-shopping-bag nav_icon'></i> 
+                    <span class="nav_name">Tienda</span> 
+                </a>
+
+                <a href="registro.html" class="nav_link"> 
+                    <i class='bx bx-log-in nav_icon'></i> 
+                    <span class="nav_name">Registro</span> 
+                </a>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Video en Loop-->
+    <div class="loop">
+        <img src="media/img/titulo/titulo.png" alt="League of Legends">
+
+        <div class="loop-contenedor">
+            <video autoplay loop muted>
+                <source src="videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="juega">
+        <div class="juega__lol">
+            <a href="https://signup.las.leagueoflegends.com/es/signup/index#/"><img src="media/img/apps/windows-badge.png" alt="Microsoft Store"></a>
+        </div>
+
+        <div class="juega__lol">
+            <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=es"><img src="media/img/apps/googleplay-badge.png" alt="Google Play"></a>
+        </div>
+
+        <div class="juega__lol">
+            <a href="https://apps.apple.com/es/app/league-of-legends-friends/id1077150310?ls=1"><img src="media/img/apps/appstore-badge.png" alt="App Store"></a>
+        </div>
+    </div>
+
+    <!--Elige a tu Campeón-->
+    <div class="roles">
+        <div class="roles_titulo">
+            <h3>Elige a tu CAMPEÓN</h3>
+            <p>¡Hay diferentes roles que podrás elegir!</p>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="media/img/roles/asesinosAkali.jpg" class="d-block w-100" alt="Akali Asesino">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ASESINOS</h5>
+                    <p>Son buenos atacando en solitario y cuerpo a cuerpo, infligen mucho daño en cuestion de segundos y cuentan con mucha movilidad.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="media/img/roles/luchadoresGaren.jpg" class="d-block w-100" alt="Garen Luchador">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>LUCHADORES</h5>
+                    <p>Equilibrados para atacar y defender, funcionan muy bien tanto en solitario como en equipo.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="media/img/roles/magoAhri.jpg" class="d-block w-100" alt="Ahri Mago">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>MAGOS</h5>
+                    <p>Se caracterizan por tener una combinación de hechizos de larga distancia, area de efecto (AoE) o de gran utilidad para realizar su trabajo.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="media/img/roles/tiradorAphelios.jpg" class="d-block w-100" alt="Aphelios Tirador">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TIRADORES</h5>
+                    <p>Son atacantes a distancia que sacrifican su defensa para poseer ataque que ayude al equipo a eliminar rapidamente a los rivales.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="media/img/roles/apoyoJanna.jpg" class="d-block w-100" alt="Janna Apoyo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>APOYOS</h5>
+                    <p>Son la rueda de auxilio de todo el equipo, siempre estan ayudando a sus compañeros y evitan constamente los ataques del enemigo con sus habilidades.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="media/img/roles/tanqueGalio.jpg" class="d-block w-100" alt="Galio Tanque">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TANQUES</h5>
+                    <p>Siempre estan por delante de todos para recibir la mayor cantidad de daño y evitar que lastimen a sus compañeros, poseen muchisima resistencia.</p>
+                </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Videos en la Página Inicio-->
+    <div class="titulos-contenidos">
+        <h3>Videos</h3>
+    </div>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zP7AGWiw8Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8PbhGt8XxSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-TUK2mj_DSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!--Notas de la versión en la Página Inicio-->
+    <div class="titulos-contenidos">
+        <h3>Novedades</h3>
+    </div>
+
+    <div class="notas">
+        <div class="notas-contenedor">
+            <h3>NOTAS DE LA VERSIÓN 11.12</h3>
+            <p>Esta vez tenemos una versión ligera en la que nos enfocaremos en ajustes a los campeones (en la versión 11.13 tendremos un gran trabajo de sistemas). Esto significa que le pondremos atención a Aphelios y a algunas de sus combinaciones de armas menos populares; además, haremos debilitaciones a casos especiales en la escena profesional (Renekton, Kai’Sa). Luego, el centro de atención será el favorito de todos, el incuestionablemente confiable, el doctor morado por definición. Tal vez su apariencia parezca renovada, pero no sabemos si se puede esperar lo mismo de sus pacientes.</p>
+            <img src="media/img/notas/parche11.12.png" alt="Parche 11.12">
+        </div>
+
+        <div class="notas-contenedor">
+            <h3>NOTAS DE LA VERSIÓN 11.11</h3>
+            <p>En esta versión vamos a echar un vistazo a los cambios que implementamos a principios de temporada para ver cómo está la situación. Esto incluye debilitaciones a Morgana en la jungla, cuya mejora en la última versión ha funcionado demasiado bien y la ha alejado de sus posiciones principales. Además, damos un poco de cariño a Ryze, que desde los cambios a los objetos ve la vida de color azul melancolía (aunque él sea azul en general). Para rematar todo esto, Bombardeo al nexo ha vuelto en todo su esplendor, con sus propios cambios de equilibrio. ¡Y eso es todo, amigos! Nos vemos.</p>
+            <img src="media/img/notas/parche11.11.png" alt="Parche 11.11">
+        </div>
+    </div>
+
+    <!--Mejores Campeones del parche 11.12-->
+    <div class="titulos-contenidos">
+        <h3>¡Los mejores campeones de la semana!</h3>
+    </div>
+    <div class="tier">
+            <div class="tier__contenido">
+                <div class="tier-titulo">
+                    <h5>Superior</h5>
+                    <img src="media/img/iconos roles/TOP.png" alt="TOP">
+                </div>
+
+                <div class="tier__iconos">
+                    <img src="media/img/iconos campeones/camille.webp" alt="Camille" title="Camille">
+                    <img src="media/img/iconos campeones/fiora.webp" alt="Fiora" title="Fiora">
+                    <img src="media/img/iconos campeones/riven.webp" alt="Riven" title="Riven">
+                    <img src="media/img/iconos campeones/kled.webp" alt="Kled" title="Kled">
+                    <img src="media/img/iconos campeones/shen.webp" alt="Shen" title="Shen">
+                    <img src="media/img/iconos campeones/urgot.webp" alt="Urgot" title="Urgot">
+                    <img src="media/img/iconos campeones/sett.webp" alt="Sett" title="Sett">
+                    <img src="media/img/iconos campeones/garen.webp" alt="Garen" title="Garen">
+                    <img src="media/img/iconos campeones/ornn.webp" alt="Ornn" title="Ornn">
+                    <img src="media/img/iconos campeones/nasus.webp" alt="Nasus" title="Nasus">
+                    <img src="media/img/iconos campeones/mordekaiser.webp" alt="Mordekaiser" title="Mordekaiser">
+                    <img src="media/img/iconos campeones/wukong.webp" alt="Wukong" title="Wukong">
+                </div>
+            </div>
+
+            <div class="tier__contenido">
+                <div class="tier-titulo">
+                    <h5>Medio</h5>
+                    <img src="media/img/iconos roles/MID.png" alt="MID">
+                </div>
+
+                <div class="tier__iconos">
+                    <img src="media/img/iconos campeones/rumble.webp" alt="Rumble" title="Rumble">
+                    <img src="media/img/iconos campeones/yone.webp" alt="Yone" title="Yone">
+                    <img src="media/img/iconos campeones/sett.webp" alt="Sett" title="Sett">
+                    <img src="media/img/iconos campeones/xerath.webp" alt="Xerath" title="Xerath">
+                    <img src="media/img/iconos campeones/annie.webp" alt="Annie" title="Annie">
+                    <img src="media/img/iconos campeones/malzahar.webp" alt="Malhazar" title="Malhazar">
+                    <img src="media/img/iconos campeones/lux.webp" alt="Lux" title="Lux">
+                    <img src="media/img/iconos campeones/yasuo.webp" alt="Yasuo" title="Yasuo">
+                    <img src="media/img/iconos campeones/ahri.webp" alt="Ahri" title="Ahri">
+                    <img src="media/img/iconos campeones/diana.webp" alt="Diana" title="Diana">
+                    <img src="media/img/iconos campeones/katarina.webp" alt="Katarina" title="Katarina">
+                    <img src="media/img/iconos campeones/viktor.webp" alt="Viktor" title="Viktor">
+                </div>
+            </div>
+
+            <div class="tier__contenido">
+                <div class="tier-titulo">
+                    <h5>Jungla</h5>
+                    <img src="media/img/iconos roles/JUNGLA.png" alt="JUNGLA">
+                </div>
+
+                <div class="tier__iconos">
+                    <img src="media/img/iconos campeones/master-yi.webp" alt="Maestro Yi" title="Maestro Yi">
+                    <img src="media/img/iconos campeones/fiddlesticks.webp" alt="Fiddlestick" title="Fiddlestick">
+                    <img src="media/img/iconos campeones/warwick.webp" alt="Warwick" title="Warwick">
+                    <img src="media/img/iconos campeones/zac.webp" alt="Zac" title="Zac">
+                    <img src="media/img/iconos campeones/nocturne.webp" alt="Nocturne" title="Nocturne">
+                    <img src="media/img/iconos campeones/volibear.png" alt="Volibear" title="Volibear">
+                    <img src="media/img/iconos campeones/diana.webp" alt="Diana" title="Diana">
+                    <img src="media/img/iconos campeones/amumu.webp" alt="Amumu" title="Amumu">
+                    <img src="media/img/iconos campeones/xin-zhao.webp" alt="Xin Zhao" title="Xin Zhao">
+                    <img src="media/img/iconos campeones/shaco.webp" alt="Shaco" title="Shaco">
+                    <img src="media/img/iconos campeones/khazix.webp" alt="Kha Zix" title="Kha'Zix">
+                    <img src="media/img/iconos campeones/jarvan-iv.webp" alt="Jarvan IV" title="Jarvan IV">
+                </div>
+            </div>
+
+            <div class="tier__contenido">
+                <div class="tier-titulo">
+                    <h5>Tirador</h5>
+                    <img src="media/img/iconos roles/ADC.png" alt="ADC">
+                </div>
+
+                <div class="tier__iconos">
+                    <img src="media/img/iconos campeones/jhin.webp" alt="Jhin" title="Jhin">
+                    <img src="media/img/iconos campeones/ziggs.webp" alt="Ziggs" title="Ziggs">
+                    <img src="media/img/iconos campeones/ashe.webp" alt="Ashe" title="Ashe">
+                    <img src="media/img/iconos campeones/miss-fortune.webp" alt="Miss Fortune" title="Miss Fortune">
+                    <img src="media/img/iconos campeones/swain.webp" alt="Swain" title="Swain">
+                    <img src="media/img/iconos campeones/kogmaw.webp" alt="Kog Maw" title="Kog'Maw">
+                    <img src="media/img/iconos campeones/vayne.webp" alt="Vayne" title="Vayne">
+                    <img src="media/img/iconos campeones/sivir.webp" alt="Sivir" title="Sivir">
+                    <img src="media/img/iconos campeones/ezreal.webp" alt="Ezreal" title="Ezreal">
+                    <img src="media/img/iconos campeones/jinx.webp" alt="Jinx" title="Jinx">
+                    <img src="media/img/iconos campeones/caitlyn.webp" alt="Caitlyn" title="Caitlyn">
+                    <img src="media/img/iconos campeones/twitch.webp" alt="Twitch" title="Twitch">
+                </div>
+            </div>
+
+            <div class="tier__contenido">
+                <div class="tier-titulo">
+                    <h5>Soporte</h5>
+                    <img src="media/img/iconos roles/SUPPORT.png" alt="SUPPORT">
+                </div>
+
+                <div class="tier__iconos">
+                    <img src="media/img/iconos campeones/zyra.png" alt="Zyra" title="Zyra">
+                    <img src="media/img/iconos campeones/sona.webp" alt="Sona" title="Sona">
+                    <img src="media/img/iconos campeones/janna.webp" alt="Janna" title="Janna">
+                    <img src="media/img/iconos campeones/brand.webp" alt="Brand" title="Brand">
+                    <img src="media/img/iconos campeones/zilean.webp" alt="Zilean" title="Zilean">
+                    <img src="media/img/iconos campeones/nami.webp" alt="Nami" title="Nami">
+                    <img src="media/img/iconos campeones/soraka.webp" alt="Soraka" title="Soraka">
+                    <img src="media/img/iconos campeones/lulu.webp" alt="Lulu" title="Lulu">
+                    <img src="media/img/iconos campeones/leona.webp" alt="Leona" title="Leona">
+                    <img src="media/img/iconos campeones/velkoz.webp" alt="VelKoz" title="Vel'Koz">
+                    <img src="media/img/iconos campeones/blitzcrank.webp" alt="Blitzcrank" title="Blitzcrank">
+                    <img src="media/img/iconos campeones/alistar.webp" alt="Alistar" title="Alistar">
+                </div>
+            </div>
+    </div>
+
+    <!--Pie de las Páginas-->
+    <footer class="footer">
+        <div class="footer__contenedor" id="footer__contenedor-responsive">
+            <div class="footer__logo">
+                <a href="inicio.html"><img src="media/img/titulo/lolTitulo.png" alt="League of Legends"></a>
+            </div>
+
+            <div class="footer__navegador">
+                <a href="https://www.riotgames.com/es"><img src="media/img/logo/riot-games.svg" alt="Riot Games" id="riotgames-l"></a>
+            </div>
+
+            <div class="footer__navegador-secundario">
+                <a href="https://www.intel.la/content/www/xl/es/homepage.html"><img src="media/img/sponsors/intelLogo.png" alt="Intel"></a>
+            </div>
+
+            <div class="footer__social" id="footer__social-responsive">
+                    <a href="https://www.facebook.com/LeagueofLegendsLatino"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/lollatam"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/juegalol/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/RiotGamesLatino"><i class="fab fa-youtube"></i></a>
+                    <a href="https://es.linkedin.com/company/riot-games"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://es.linkedin.com/company/riot-games"><i class="fab fa-reddit-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-medio" id="footer-medio-responsive">
+        <p class="footer-medio__texto">© 2021 Riot Games, Inc. Todos los derechos reservados.</p>
+        <p class="footer-medio__texto--end">The Observatory Building, Sir John Rogerson's Quay, Dublín, Irlanda</p>
+    </div>
+
+    <div class="footer-final" id="footer-final-responsive">
+            <img src="media/img/sponsors/pegi-12.svg" id="pegi-12" alt="Pegi 12">
+            <img src="media/img/sponsors/usk12.png" id="usk-12" alt="USK 12">
+    </div>
+
+    <!--Scripts Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

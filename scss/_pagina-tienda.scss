@@ -1,0 +1,110 @@
+$color-background: #bfbfbf;
+$color-amarillo: #EBA272;
+$sombras: 0 0 20px rgba(0, 0, 0, 0.55);
+$transicion-rapida: all 0.2s;
+$transicion-media: all 0.8s;
+
+@mixin italica-negrita{
+    font-style: italic;
+    font-weight: bold;
+}
+@mixin movimiento-carousel{
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.tienda{
+    box-shadow: $sombras;
+    .container{
+
+        .card:hover{
+            transform: translateY(-15px);
+            transition: transform .3s;
+        }
+        .card{
+            outline: none;
+            user-select: none;
+            animation: change 10s ease-in-out infinite;
+            @keyframes gradient{
+                0%{
+                    background-position: 0 50%;
+                }
+            
+                50%{
+                    background-position: 100% 50%;
+                }
+            
+                100%{
+                    background-position: 0 50%;
+                }
+            }
+            background: linear-gradient(-45deg, #000000, #000000, #bfbfbf, #bfbfbf);
+            background-size: 400% 400%;
+            animation: gradient 6s ease infinite;
+            border-radius: 20px;
+            transition: transform .3s;
+            margin-bottom: 30px;
+            box-sizing: $sombras;
+            img{
+                width: 80%;
+            }
+
+            h5{
+                color: white;
+                font-size: 1.8rem;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            .texto1{
+                color: white;
+                font-weight: normal;
+                font-size: 1rem;
+            }
+
+            .texto2{
+                color: greenyellow;
+            }
+
+            .estrellas{
+                    color: #fbc02d;
+            }
+
+            .precio span{
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            
+            .comprar{
+                background-color: black;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+
+                a{
+                    color: white;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                a:hover{
+                    color: #fbc02d;
+                }
+            }
+        }
+    }
+}
+
+@keyframes cambiar{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}

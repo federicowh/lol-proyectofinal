@@ -1,0 +1,221 @@
+$color-background: #bfbfbf;
+$color-amarillo: #EBA272;
+$sombras: 0 0 20px rgba(0, 0, 0, 0.55);
+$transicion-rapida: all 0.2s;
+$transicion-media: all 0.8s;
+
+@mixin italica-negrita{
+    font-style: italic;
+    font-weight: bold;
+}
+@mixin movimiento-carousel{
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+/*Encabezado*/
+.header{
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+
+    width: 100%;
+    height: 3rem;
+    top: 0;
+    left: 0;
+
+    padding: 0 1rem;
+    z-index: 100;
+
+    box-shadow: $sombras;
+    transition: .5s;
+
+    .header_toggle{
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: $transicion-rapida;
+    }
+    .header_toggle:hover{
+        transition: $transicion-rapida;
+        color: $color-amarillo;
+    }
+}
+
+/*Redes Sociales del encabezado*/
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 45px;
+
+    a{
+        margin-left: 12px;
+        margin-right: 12px;
+        
+        color: white;
+    }
+
+    i{
+        font-size: 1.15rem;
+        transition: $transicion-rapida;
+    }
+    i:hover{
+        color: $color-amarillo;
+
+        transition: $transicion-rapida;
+        transform: scale(1.9,1.9);
+    }
+}
+
+/*Menu Lateral*/
+.l-navbar{
+    background-color: black;
+
+    position: fixed;
+
+    width: 68px;
+    height: 100vh;
+
+    top: 0;
+    left: -30%;
+
+    padding: .5rem 1rem 0 0;
+    z-index: 100;
+
+    box-shadow: $sombras;
+    transition: .5s;
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 100%;
+
+        overflow: hidden;
+
+        .nav_logo, 
+        .nav_link{
+            display: grid;
+            grid-template-columns: max-content max-content;
+            justify-content: left;
+            align-items: center;
+
+            column-gap: .6rem;
+
+            padding: .5rem 0 .5rem .5rem;
+        }
+
+        .nav_logo{
+            margin-bottom: 3rem;
+
+            .nav_logo-img{
+                width: 54px;
+                height: 54px;
+            }
+
+            .nav_logo-name{
+                color: white;
+                text-decoration: overline 2px solid $color-amarillo;
+
+                font-size: 0.9rem;
+                @include italica-negrita;
+
+                transition: $transicion-rapida;
+            }
+            .nav_logo-name:hover{
+                color: $color-amarillo;
+                transition: $transicion-rapida;
+            }
+        }
+
+        .nav_link{
+            color: white;
+
+            position: relative;
+
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            transition: $transicion-rapida;
+
+            .nav_icon{
+                font-size: 1.25rem;
+                transition: $transicion-rapida;
+            }
+            .nav_icon:hover{
+                color: $color-amarillo;
+                transition: $transicion-rapida;
+                transform: scale(2,2);
+            }
+
+            .nav_name{
+                margin-left: 1rem;
+                @include italica-negrita;
+            }
+            .nav_name:hover{
+                color: $color-amarillo;
+                transition: $transicion-rapida;
+            }
+        }
+    }
+}
+
+.show{
+    left: 0;
+}
+
+.height-100{
+    height: 100vh
+}
+
+/*MediaQueries*/
+@media screen and (min-width: 768px){
+    body{
+        margin: calc(3rem + 1rem) 0 0 0;
+        padding-left: calc(68px + 2rem)
+    }
+
+    .header{
+        height: calc(3rem + 1rem);
+        padding: 0 2rem 0 calc(68px + 2rem)
+    }
+
+    .header_img{
+        width: 40px;
+        height: 40px
+    }
+
+    .header_img img{
+        width: 45px
+    }
+
+    .l-navbar{
+        left: 0;
+        padding: 1rem 1rem 0 0
+    }
+
+    .show{
+        width: calc(68px + 156px)
+    }
+
+    .body-pd{
+        padding-left: calc(68px + 188px)
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+    margin: 3rem 0 0 0;
+    padding: 0 1.6rem;
+    padding-left: 1.8rem;
+    }
+}

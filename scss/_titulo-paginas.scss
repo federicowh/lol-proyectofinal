@@ -1,0 +1,49 @@
+$color-background: #bfbfbf;
+$color-amarillo: #EBA272;
+$sombras: 0 0 20px rgba(0, 0, 0, 0.55);
+$transicion-rapida: all 0.2s;
+$transicion-media: all 0.8s;
+
+@mixin italica-negrita{
+    font-style: italic;
+    font-weight: bold;
+}
+@mixin movimiento-carousel{
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.titulos{
+    background-color: black;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 15px;
+    margin-top: 90px;
+
+    user-select: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+
+    h1{
+        color: white;
+        font-size: 2.5rem;
+        @include italica-negrita;
+
+        margin-top: 15px;
+        transition: $transicion-rapida;
+    }
+    h1:hover{
+        transition: $transicion-rapida;
+        color: $color-amarillo;
+    }
+
+    p{
+        color: white;
+    }
+}
