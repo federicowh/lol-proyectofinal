@@ -21,13 +21,13 @@ $transicion-media: all 0.8s;
     grid-template-columns: 7vw 1fr 7vw;
     grid-template-rows: auto auto;
     user-select: none;
-    .footer__contenedor{
+    .footer-contenedor{
         grid-column: 2 / 3;
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 3fr;
         grid-template-rows: auto auto;
         grid-template-areas: "logo navigation secondary social" "contact contact . newsletter";
-        .footer__logo{
+        .footer-logo{
             grid-area: logo;
             justify-self: center;
             align-items: center;
@@ -42,7 +42,7 @@ $transicion-media: all 0.8s;
             }
         }
 
-        .footer__navegador{
+        .footer-navegador{
             grid-area: navigation;
             justify-self: center;
             align-self: center;
@@ -58,7 +58,7 @@ $transicion-media: all 0.8s;
             }
         }
 
-        .footer__navegador-secundario{
+        .footer-navegador-secundario{
             grid-area: secondary;
             justify-self: center;
             align-self: center;
@@ -75,7 +75,7 @@ $transicion-media: all 0.8s;
         }
     }
 
-    .footer__social{
+    .footer-social{
         grid-area: social;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -99,13 +99,13 @@ $transicion-media: all 0.8s;
     background-color: black;
     display: grid;
     grid-template-columns: 7vw 8fr 8fr 7vw;
-    .footer-medio__texto{
+    .footer-medio-texto{
         color: white;
         grid-column: 2;
         text-decoration: 3px overline $color-amarillo;
     }
 
-    .footer-medio__texto--end{
+    .footer-medio-texto--end{
         color: white;
         text-decoration: 3px overline $color-amarillo;
         text-align: end;
@@ -139,19 +139,19 @@ $transicion-media: all 0.8s;
 
 /*MediaQueries Footer*/
 @media only screen and (max-width: 900px){
-    #footer__contenedor-responsive{
+    #footer-contenedor-responsive{
         grid-template-columns: 2fr;
     }
 
-    .footer__navegador{
+    .footer-navegador{
         display: none;
     }
 
-    .footer__navegador-secundario{
+    .footer-navegador-secundario{
         display: none;
     }
 
-    #footer__social-responsive{
+    #footer-social-responsive{
         display: none;
     }
 }
@@ -161,12 +161,12 @@ $transicion-media: all 0.8s;
         grid-template-columns: 7vw 8fr 7vw;
     }
 
-    .footer-medio__texto{
+    .footer-medio-texto{
         font-size: 0.7rem;
         text-align: center;
     }
 
-    .footer-medio__texto--end{
+    .footer-medio-texto--end{
         display: none;
         font-size: 0.7rem;
         text-align: center;
