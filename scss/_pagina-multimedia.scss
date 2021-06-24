@@ -32,17 +32,39 @@ $transicion-media: all 0.8s;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
     padding: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+
+    box-shadow: $sombras;
 
     iframe{
         padding: 10px;
+
         border-radius: 20px;
         transition: $transicion-media;
     }
     iframe:hover{
         transition: $transicion-media;
         transform: scale(1.05,1.05);
+    }
+}
+
+/*MediaQueries Página Multimedia*/
+@media only screen and (max-width: 360px){
+    .galeria{
+        iframe{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .galeria{
+        iframe{
+            width: 180px;
+            height: 180px;
+        }
     }
 }
