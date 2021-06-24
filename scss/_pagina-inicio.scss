@@ -13,6 +13,9 @@ $transicion-media: all 0.8s;
     opacity: 0;
     transition: opacity ease-out .7s;
 }
+@mixin bordes-r{
+    border-radius: 10px;
+}
 
 /*Video en Loop*/
 .loop{
@@ -86,12 +89,14 @@ $transicion-media: all 0.8s;
 
     box-shadow: $sombras;
 
-    .roles_titulo{
+    .roles-titulo{
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+
         text-align: center;
+
         margin: auto;
         width: 40%;
 
@@ -133,9 +138,10 @@ $transicion-media: all 0.8s;
     justify-content: center;
     align-items: center;
 
+    text-align: center;
+
     padding: 15px;
 
-    text-align: center;
     user-select: none;
 
     h3{
@@ -241,7 +247,7 @@ $transicion-media: all 0.8s;
 
     box-shadow: $sombras;
 
-    .tier__contenido{
+    .tier-contenido{
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -250,13 +256,13 @@ $transicion-media: all 0.8s;
         margin: 20px;
         padding: 10px;
 
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+        @include bordes-r;
+        box-shadow: $sombras;
 
         .tier-titulo:hover{
-            transition: $transicion-media;
-            color: white;
             background-color: black;
+            color: white;
+            transition: $transicion-media;
         }
         .tier-titulo{
             display: flex;
@@ -269,7 +275,7 @@ $transicion-media: all 0.8s;
 
             user-select: none;
 
-            border-radius: 10px;
+            @include bordes-r;
             box-shadow: $sombras;
             transition: $transicion-media;
 
@@ -285,7 +291,7 @@ $transicion-media: all 0.8s;
             }
         }
 
-        .tier__iconos{
+        .tier-iconos{
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
@@ -296,7 +302,6 @@ $transicion-media: all 0.8s;
             img{
                 width: 50px;
                 height: 50px;
-
                 margin: 8px;
 
                 transition: $transicion-media;
@@ -327,7 +332,7 @@ $transicion-media: all 0.8s;
     .roles{
         flex-flow: column wrap;
 
-        .roles_titulo{
+        .roles-titulo{
             width: 100%;
         }
     
