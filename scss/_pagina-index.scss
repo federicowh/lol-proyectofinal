@@ -3,6 +3,7 @@ $color-amarillo: #EBA272;
 $sombras: 0 0 20px rgba(0, 0, 0, 0.55);
 $transicion-rapida: all 0.2s;
 $transicion-media: all 0.8s;
+$border-r: 10px;
 
 @mixin italica-negrita{
     font-style: italic;
@@ -12,9 +13,6 @@ $transicion-media: all 0.8s;
     display: block;
     opacity: 0;
     transition: opacity ease-out .7s;
-}
-@mixin bordes-r{
-    border-radius: 10px;
 }
 
 /*Video en Loop*/
@@ -169,7 +167,7 @@ $transicion-media: all 0.8s;
 
     iframe{
         margin: 10px;
-        border-radius: 10px;
+        border-radius: $border-r;
         transition: $transicion-media;
     }
     iframe:hover{
@@ -206,7 +204,7 @@ $transicion-media: all 0.8s;
 
         img{
             width: 100%;
-            border-radius: 10px;
+            border-radius: $border-r;
             transition: $transicion-media;
         }
         img:hover{
@@ -218,17 +216,17 @@ $transicion-media: all 0.8s;
 
 /*Mejores Campeones del Mes*/
 .titulo-superior{
+    background-color: black;
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: black;
 
     h3{
-        font-size: 2.5rem;
-        font-style: italic;
-        font-weight: bold;
         color: white;
+        font-size: 2.5rem;
+        @include italica-negrita;
     }
 
     p{
@@ -256,7 +254,7 @@ $transicion-media: all 0.8s;
         margin: 20px;
         padding: 10px;
 
-        @include bordes-r;
+        border-radius: $border-r;
         box-shadow: $sombras;
 
         .tier-titulo:hover{
@@ -274,8 +272,7 @@ $transicion-media: all 0.8s;
             padding: 10px;
 
             user-select: none;
-
-            @include bordes-r;
+            border-radius: $border-r;
             box-shadow: $sombras;
             transition: $transicion-media;
 
@@ -330,10 +327,13 @@ $transicion-media: all 0.8s;
 
 @media screen and (max-width: 649px){
     .roles{
+        background-color: black;
         flex-flow: column wrap;
 
         .roles-titulo{
+            color: white;
             width: 100%;
+            padding: 15px;
         }
     
         .carousel{
