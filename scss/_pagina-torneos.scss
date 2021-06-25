@@ -17,50 +17,58 @@ $border-r: 10px;
     margin-bottom: 30px;
 
     user-select: none;
-
     box-shadow: $sombras;
+
     .torneos-contenedor{
+        background-color: black;
+
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 50%;
+        width: 25%;
+
+        box-shadow: $sombras;
 
         .torneos-titulos{
+            background-color: black;
+
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
+
             width: 70%;
             padding: 10px;
             margin-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: $sombras;
+
             transition: $transicion-rapida;
             h3{
-                font-size: 1.3rem;
-                color: black;
+                font-size: 1.2rem;
+                color: white;
                 @include italica-negrita;
                 transition: $transicion-rapida;
+            }
+            h3:hover{
+                transition: $transicion-rapida;
+                color: $color-amarillo;
             }
         }
 
         .torneos-rivales:hover{
             transition: $transicion-rapida;
-            background-color: black;
+            background-color: $color-amarillo;
         }
         .torneos-rivales{
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            width: 85%;
+            width: 100%;
             padding: 10px;
             margin: 10px;
 
-            border-radius: 10px;
-            box-shadow: $sombras;
             span{
                 color: white;
                 margin: 10px;
@@ -68,22 +76,44 @@ $border-r: 10px;
             }
 
             img{
-                display: block;
+                transition: $transicion-media;
             }
             img:hover{
-                transition: $transicion-rapida;
-                transform: scale(0.8,0.8);
+                transition: $transicion-media;
+                transform: rotate(360deg);
             }
         }
     }
 
+    .imagenes-torneos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        width: 75%;
+
+        img{
+            margin: 15px;
+            width: 410px;
+            height: 250px;
+            border-radius: $border-r;
+            transition: $transicion-media;
+        }
+        img:hover{
+            transition: $transicion-media;
+            transform: scale(1.08,1.08);
+        }
+    }
+
     .posiciones{
+        background-color: black;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 18%;
+        width: 25%;
 
         user-select: none;
 
@@ -97,131 +127,169 @@ $border-r: 10px;
         }
 
         thead tr{
-            background-color: black;
             color: white;
             text-align: left;
-        }
-        tr:hover{
-            background-color: black;
-            color: white;
         }
 
         th, td{
             padding: 12px 15px;
             text-align: center;
+            color: white;
+            transition: $transicion-media;
+        }
+
+        td:hover{
+            transition: $transicion-media;
+            transform: scale(1.5,1.5);
         }
     }
 
-    .imagenes-torneos{
+    .videos-torneos{
         display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
 
-        width: 30%;
-        img{
-            margin: 15px 0px 15px 0px;
-            width: 410px;
-            height: 250px;
-            border-radius: 10px;
-            transition: $transicion-rapida;
+        width: 75%;
+
+        iframe{
+            margin: 15px;
+            border-radius: $border-r;
+            transition: $transicion-media;
         }
-        img:hover{
-            transition: $transicion-rapida;
-            transform: scale(1.08,1.08);
+        iframe:hover{
+            transition: $transicion-media;
+            transform: scale(1.06,1.06);
         }
     }
 }
 
-/*MediaQueries*/
-@media only screen and (max-width: 1810px){
+/*MediaQueries Página Torneos*/
+@media only screen and (max-width: 1698px){
     .torneos{
-        .torneos-contenedor{
-            width: 50%;
-            .torneos-titulos{
-                width: 70%;
-            }
-
-            .torneos-rivales{
-                width: 80%;
-            }
-        }
-
         .posiciones{
-            flex-flow: column wrap;
-            width: 50%;
+            background-color: black;
+            width: 100%;
+            margin-bottom: 20px;
+            .posiciones-contenido{
+                border: none;
+            }
+
+            thead tr{
+                background-color: black;
+                color: white;
+                text-align: left;
+            }
+
+            th, td{
+                padding: 12px 70px 15px 70px;
+            }
         }
 
-        .imagenes-torneos{
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-
-            margin: 25px 0px 25px 0px;
+        .videos-torneos{
             width: 100%;
+        }
+    }
+}
 
-            img{
-                margin: 10px;
+@media only screen and (max-width: 1360px){
+    .torneos{
+        .torneos-contenedor{
+            width: 100%;
+            margin-bottom: 20px;
+            .torneos-titulos{
+                width: 100%;
+                background-color: $color-amarillo;
+                margin-bottom: 0px;
+            }
+            .torneos-rivales{
+                margin-top: 0px;
+            }
+        }
+        
+        .imagenes-torneos{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .torneos{
+        .posiciones{
+            th, td{
+                padding: 12px 15px;
             }
         }
     }
 }
 
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 500px){
     .torneos{
-        flex-flow: column wrap;
-        .torneos-contenedor{
-            width: 100%;
-            .torneos-titulos{
-                margin-top: 30px;
+        .imagenes-torneos{
+            img{
+                width: 320px;
+                height: 180px;
             }
+        }
 
-            .torneos-rivales{
+        .videos-torneos{
+            iframe{
+                width: 320px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .torneos{
+        .imagenes-torneos{
+            img{
+                width: 280px;
+                height: 180px;
+            }
+        }
+
+        .videos-torneos{
+            iframe{
+                width: 280px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .torneos{
+        .torneos-contenedor{
+            .torneos-titulos{
                 margin-bottom: 30px;
             }
-        }
-
-        .posiciones{
-            width: 100%;
-        }
-    }
-}
-
-@media only screen and (max-width: 484px){
-    .torneos{
-        .torneos-contenedor{
             .torneos-rivales{
-                width: 30%;
-            }
-        }
-
-        .imagenes-torneos{
-            img{
-                width: 300px;
-                height: 200px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .torneos{
-        .torneos-contenedor{
-            .torneos-rivales{
-                width: 30%;
+                width: 100%;
+                padding-bottom: 50px;
+                img{
+                    width: 20%;
+                }
             }
         }
 
         .posiciones{
             th, td{
-                padding: 3px 3px;
-                text-align: center;
+                padding: 12px 5px;
             }
         }
 
         .imagenes-torneos{
             img{
-                width: 230px;
+                width: 220px;
+                height: 150px;
+            }
+        }
+
+        .videos-torneos{
+            iframe{
+                width: 220px;
                 height: 150px;
             }
         }
