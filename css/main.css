@@ -584,7 +584,7 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
   .galeria iframe {
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all 0.8s; }
   .galeria iframe:hover {
     transition: all 0.8s;

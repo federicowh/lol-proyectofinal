@@ -3,15 +3,11 @@ $color-amarillo: #EBA272;
 $sombras: 0 0 20px rgba(0, 0, 0, 0.55);
 $transicion-rapida: all 0.2s;
 $transicion-media: all 0.8s;
+$border-r-grande: 30px;
 
 @mixin italica-negrita{
     font-style: italic;
     font-weight: bold;
-}
-@mixin movimiento-carousel{
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out .7s;
 }
 
 /*Multimedia - Galeria Imágenes*/
@@ -41,7 +37,7 @@ $transicion-media: all 0.8s;
     iframe{
         padding: 10px;
 
-        border-radius: 20px;
+        border-radius: $border-r-grande;
         transition: $transicion-media;
     }
     iframe:hover{
