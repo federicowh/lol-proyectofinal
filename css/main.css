@@ -608,13 +608,12 @@ a {
     transform: translateY(-15px);
     transition: transform .3s; }
   .tienda .container .card {
-    outline: none;
-    animation: change 10s ease-in-out infinite;
     background: linear-gradient(-45deg, #000000, #000000, #bfbfbf, #bfbfbf);
     background-size: 400% 400%;
-    animation: gradient 6s ease infinite;
+    animation: gradient 6s ease-in-out infinite;
     transition: transform .3s;
     margin-bottom: 30px;
+    outline: none;
     user-select: none;
     border-radius: 20px;
     box-sizing: 0 0 20px rgba(0, 0, 0, 0.55); }

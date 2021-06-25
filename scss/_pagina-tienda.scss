@@ -3,15 +3,17 @@ $color-amarillo: #EBA272;
 $sombras: 0 0 20px rgba(0, 0, 0, 0.55);
 $transicion-rapida: all 0.2s;
 $transicion-media: all 0.8s;
+$border-r-medio: 20px;
 
 @mixin italica-negrita{
     font-style: italic;
     font-weight: bold;
 }
-@mixin movimiento-carousel{
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out .7s;
+@mixin animacion-fondo{
+    background: linear-gradient(-45deg, #000000, #000000, #bfbfbf, #bfbfbf);
+    background-size: 400% 400%;
+    animation: gradient 6s ease-in-out infinite;
+    transition: transform .3s;
 }
 
 .tienda{
@@ -23,8 +25,6 @@ $transicion-media: all 0.8s;
             transition: transform .3s;
         }
         .card{
-            outline: none;
-            animation: change 10s ease-in-out infinite;
             @keyframes gradient{
                 0%{
                     background-position: 0 50%;
@@ -38,16 +38,14 @@ $transicion-media: all 0.8s;
                     background-position: 0 50%;
                 }
             }
-            background: linear-gradient(-45deg, #000000, #000000, #bfbfbf, #bfbfbf);
-            background-size: 400% 400%;
-            animation: gradient 6s ease infinite;
-            transition: transform .3s;
+            @include animacion-fondo;
 
             margin-bottom: 30px;
 
+            outline: none;
             user-select: none;
 
-            border-radius: 20px;
+            border-radius: $border-r-medio;
             box-sizing: $sombras;
             img{
                 width: 80%;
