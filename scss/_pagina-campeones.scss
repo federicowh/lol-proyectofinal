@@ -16,9 +16,13 @@ $border-r-grande: 30px;
     opacity: 0;
     transition: opacity ease-out .7s;
 }
-@mixin bordes-costados{
+@mixin bordes-arriba{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+@mixin bordes-abajo{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .campeones{
@@ -43,7 +47,7 @@ $border-r-grande: 30px;
 
             margin: 25px 15px 0px 15px;
 
-            @include bordes-costados;
+            @include bordes-arriba;
         }
 
         h5{
@@ -62,8 +66,7 @@ $border-r-grande: 30px;
             margin-right: 15px;
 
             @include italica-negrita;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+            @include bordes-abajo;
         }
     }
     div:hover{
