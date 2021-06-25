@@ -5,6 +5,7 @@ ALUMNO: FEDERICO WEIMANN
   cambié mi idea a una página basada en el videojuego LEAGUE OF LEGENDS (LOL).
 
 NOMBRE DEL PROYECTO: LOL (League of Legends)
+
 FINALIDAD DEL PROYECTO: BRINDAR INFORMACIÓN DEL VIDEOJUEGO LEAGUE OF LEGENDS
 - ¿Quienes son sus personajes?
 - ¿Cuantos son?
@@ -12,6 +13,7 @@ FINALIDAD DEL PROYECTO: BRINDAR INFORMACIÓN DEL VIDEOJUEGO LEAGUE OF LEGENDS
 - Noticias de los parches
 - Imagenes y videos del juego
 - Información sobre los equipos del torneo latinoamericano y los resultados
+- Ver los productos del juego en una tienda online
 
 EDITOR DE CODIGO UTILIZADO: VISUAL STUDIO CODE
 
