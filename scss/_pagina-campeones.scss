@@ -13,9 +13,6 @@ $transicion-media: all 0.8s;
     opacity: 0;
     transition: opacity ease-out .7s;
 }
-@mixin bordes-r{
-    border-radius: 10px;
-}
 @mixin bordes-costados{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -32,7 +29,6 @@ $transicion-media: all 0.8s;
     margin-bottom: 30px;
 
     user-select: none;
-
     box-shadow: $sombras;
     transition: $transicion-media;
 
@@ -46,6 +42,7 @@ $transicion-media: all 0.8s;
 
             @include bordes-costados;
         }
+
         h5{
             background-color: black;
 
@@ -67,7 +64,7 @@ $transicion-media: all 0.8s;
         }
     }
     div:hover{
-        transition: all 0.5s;
+        transition: $transicion-media;
         transform: scale(1.08,1.08);
     }
 }
@@ -90,6 +87,17 @@ $transicion-media: all 0.8s;
             img{
                 width: 280px;
                 height: 170px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 352px){
+    .campeones{
+        div{
+            img{
+                width: 240px;
+                height: 150px;
             }
         }
     }

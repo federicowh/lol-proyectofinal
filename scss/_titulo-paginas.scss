@@ -8,11 +8,6 @@ $transicion-media: all 0.8s;
     font-style: italic;
     font-weight: bold;
 }
-@mixin movimiento-carousel{
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out .7s;
-}
 
 .titulos{
     background-color: black;
@@ -28,7 +23,7 @@ $transicion-media: all 0.8s;
     margin-top: 90px;
 
     user-select: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    box-shadow: $sombras;
 
     h1{
         color: white;
@@ -45,5 +40,18 @@ $transicion-media: all 0.8s;
 
     p{
         color: white;
+    }
+}
+
+@media only screen and (max-width: 352px){
+    .titulos{
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: .9rem;
+        }
     }
 }

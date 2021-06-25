@@ -428,6 +428,13 @@ a {
   .titulos p {
     color: white; }
 
+@media only screen and (max-width: 352px) {
+  .titulos h1 {
+    font-size: 2rem; }
+  .titulos p {
+    margin-top: 10px;
+    font-size: .9rem; } }
+
 /*Página Campeones*/
 .campeones {
   display: flex;
@@ -463,7 +470,7 @@ a {
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px; }
   .campeones div:hover {
-    transition: all 0.5s;
+    transition: all 0.8s;
     transform: scale(1.08, 1.08); }
 
 /*MediaQueries Página Campeones*/
@@ -476,6 +483,11 @@ a {
   .campeones div img {
     width: 280px;
     height: 170px; } }
+
+@media only screen and (max-width: 352px) {
+  .campeones div img {
+    width: 240px;
+    height: 150px; } }
 
 /*Página Noticias*/
 .noticias {
