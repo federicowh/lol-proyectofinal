@@ -1,0 +1,242 @@
+$color-background: #bfbfbf;
+$color-amarillo: #EBA272;
+$sombras: 0 0 20px rgba(0, 0, 0, 0.55);
+$transicion-rapida: all 0.2s;
+$transicion-media: all 0.8s;
+$border-r: 10px;
+
+@mixin italica-negrita{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.torneos{
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-bottom: 30px;
+
+    user-select: none;
+
+    box-shadow: $sombras;
+    .torneos-contenedor{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+
+        .torneos-titulos{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: $sombras;
+            transition: $transicion-rapida;
+            h3{
+                font-size: 1.3rem;
+                color: black;
+                @include italica-negrita;
+                transition: $transicion-rapida;
+            }
+        }
+
+        .torneos-rivales:hover{
+            transition: $transicion-rapida;
+            background-color: black;
+        }
+        .torneos-rivales{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 10px;
+            box-shadow: $sombras;
+            span{
+                color: white;
+                margin: 10px;
+                @include italica-negrita;
+            }
+
+            img{
+                display: block;
+            }
+            img:hover{
+                transition: $transicion-rapida;
+                transform: scale(0.8,0.8);
+            }
+        }
+    }
+
+    .posiciones{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 18%;
+
+        user-select: none;
+
+        .posiciones-contenido{
+            border-collapse: collapse;
+            font-size: 1.1rem;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: $sombras;
+            margin: 30px 0px 30px 0px;
+        }
+
+        thead tr{
+            background-color: black;
+            color: white;
+            text-align: left;
+        }
+        tr:hover{
+            background-color: black;
+            color: white;
+        }
+
+        th, td{
+            padding: 12px 15px;
+            text-align: center;
+        }
+    }
+
+    .imagenes-torneos{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 30%;
+        img{
+            margin: 15px 0px 15px 0px;
+            width: 410px;
+            height: 250px;
+            border-radius: 10px;
+            transition: $transicion-rapida;
+        }
+        img:hover{
+            transition: $transicion-rapida;
+            transform: scale(1.08,1.08);
+        }
+    }
+}
+
+/*MediaQueries*/
+@media only screen and (max-width: 1810px){
+    .torneos{
+        .torneos-contenedor{
+            width: 50%;
+            .torneos-titulos{
+            }
+
+            .torneos-rivales{
+                width: 80%;
+            }
+        }
+
+        .posiciones{
+            flex-flow: column wrap;
+            width: 50%;
+            .posiciones-contenido{
+            }
+
+            th, td{
+            }
+        }
+
+        .imagenes-torneos{
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+
+            margin: 25px 0px 25px 0px;
+            width: 100%;
+
+            img{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .torneos{
+        flex-flow: column wrap;
+        .torneos-contenedor{
+            width: 100%;
+            .torneos-titulos{
+                margin-top: 30px;
+            }
+
+            .torneos-rivales{
+                margin-bottom: 30px;
+            }
+        }
+
+        .posiciones{
+            width: 100%;
+            .posiciones-contenido{
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 484px){
+    .torneos{
+        .torneos-contenedor{
+            .torneos-rivales{
+                width: 30%;
+            }
+        }
+
+        .imagenes-torneos{
+            img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .torneos{
+        .torneos-contenedor{
+            .torneos-titulos{
+            }
+
+            .torneos-rivales{
+                width: 30%;
+            }
+        }
+
+        .posiciones{
+            .posiciones-contenido{
+            }
+
+            th, td{
+                padding: 3px 3px;
+                text-align: center;
+            }
+        }
+
+        .imagenes-torneos{
+            img{
+                width: 230px;
+                height: 150px;
+            }
+        }
+    }
+}
