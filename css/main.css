@@ -529,6 +529,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 2rem;
       font-style: italic;
       font-weight: bold; }
     .noticias .noticias-titulos p {
@@ -554,6 +555,14 @@ a {
       flex-flow: column wrap;
       width: 90%;
       margin: auto; } }
+
+@media only screen and (max-width: 360px) {
+  .noticias .noticias-contenedor p {
+    margin-top: 15px;
+    font-style: normal;
+    font-size: .7rem; }
+  .noticias .noticias-contenedor #noticias-link {
+    font-style: italic; } }
 
 /*Página Multimedia*/
 /*Multimedia - Galeria Imágenes*/

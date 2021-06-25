@@ -8,11 +8,6 @@ $transicion-media: all 0.8s;
     font-style: italic;
     font-weight: bold;
 }
-@mixin movimiento-carousel{
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out .7s;
-}
 
 .noticias{
     display: flex;
@@ -36,6 +31,7 @@ $transicion-media: all 0.8s;
 
         margin-bottom: 40px;
         padding-top: 30px;
+
         img{
             width: 55%;
             transition: $transicion-media;
@@ -68,6 +64,7 @@ $transicion-media: all 0.8s;
             justify-content: center;
             align-items: center;
 
+            font-size: 2rem;
             @include italica-negrita;
         }
 
@@ -105,6 +102,22 @@ $transicion-media: all 0.8s;
             flex-flow: column wrap;
             width: 90%;
             margin: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .noticias{
+        .noticias-contenedor{
+            p{
+                margin-top: 15px;
+                font-style: normal;
+                font-size: .7rem;
+            }
+
+            #noticias-link{
+                font-style: italic;
+            }
         }
     }
 }
