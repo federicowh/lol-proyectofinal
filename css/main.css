@@ -482,6 +482,7 @@ a {
   align-items: center;
   width: 100%;
   margin: auto;
+  margin-bottom: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
   .noticias .noticias-contenedor {
     display: flex;
@@ -489,7 +490,7 @@ a {
     justify-content: center;
     text-align: center;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding-top: 30px; }
     .noticias .noticias-contenedor img {
       width: 55%;
