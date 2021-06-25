@@ -8,10 +8,10 @@ $transicion-media: all 0.8s;
     font-style: italic;
     font-weight: bold;
 }
-@mixin movimiento-carousel{
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out .7s;
+@mixin medidas-body{
+    margin: 3rem 0 0 0;
+    padding: 0 1.6rem;
+    padding-left: calc(68px + 1rem);
 }
 
 *{
@@ -24,9 +24,7 @@ body{
     background-color: $color-background;
 
     position: relative;
-    margin: 3rem 0 0 0;
-    padding: 0 1.6rem;
-    padding-left: calc(68px + 1rem);
+    @include medidas-body;
 
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1rem;
