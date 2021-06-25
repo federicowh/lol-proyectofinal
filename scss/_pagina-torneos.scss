@@ -139,6 +139,7 @@ $border-r: 10px;
         .torneos-contenedor{
             width: 50%;
             .torneos-titulos{
+                width: 70%;
             }
 
             .torneos-rivales{
@@ -149,11 +150,6 @@ $border-r: 10px;
         .posiciones{
             flex-flow: column wrap;
             width: 50%;
-            .posiciones-contenido{
-            }
-
-            th, td{
-            }
         }
 
         .imagenes-torneos{
@@ -187,9 +183,6 @@ $border-r: 10px;
 
         .posiciones{
             width: 100%;
-            .posiciones-contenido{
-
-            }
         }
     }
 }
@@ -214,18 +207,12 @@ $border-r: 10px;
 @media only screen and (max-width: 400px){
     .torneos{
         .torneos-contenedor{
-            .torneos-titulos{
-            }
-
             .torneos-rivales{
                 width: 30%;
             }
         }
 
         .posiciones{
-            .posiciones-contenido{
-            }
-
             th, td{
                 padding: 3px 3px;
                 text-align: center;

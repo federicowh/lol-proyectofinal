@@ -731,6 +731,8 @@ a {
 @media only screen and (max-width: 1810px) {
   .torneos .torneos-contenedor {
     width: 50%; }
+    .torneos .torneos-contenedor .torneos-titulos {
+      width: 70%; }
     .torneos .torneos-contenedor .torneos-rivales {
       width: 80%; }
   .torneos .posiciones {
