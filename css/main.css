@@ -61,8 +61,8 @@ a {
     font-size: 1.15rem;
     transition: all 0.2s; }
   .social i:hover {
-    color: #EBA272;
     transition: all 0.2s;
+    color: #EBA272;
     transform: scale(1.9, 1.9); }
 
 /*Menú Lateral*/
