@@ -1,3 +1,14 @@
+:root {
+    --color-background: #bfbfbf;
+    --color-amarillo: #EBA272;
+    --sombras: 0 0 20px rgba(0, 0, 0, 0.55);
+    --transicion-rapida: all 0.2s;
+    --transicion-media: all 0.8s;
+    --transicion-lenta: all 2;
+    --border-r: 10px;
+    --border-r-grande: 30px;
+}
+
 /*Generales*/
 @import "generales";
 
