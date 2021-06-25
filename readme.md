@@ -19,6 +19,7 @@ CLAVE SSH: SI, FUE GENERADA DESDE LA TERMINAL.
 
 RAMAS: 1) main - 2) rama-federicowh
 
-SUBIDA AL SERVIDOR: 000Webhost.com
+SUBIDA AL SERVIDOR: 000Webhost.com - Link: https://lol-proyectofinal.000webhostapp.com/
+GITHUB PAGES: https://federicowh.github.io/lol-proyectofinal/
 
 FECHA DE ENTREGA: 25/06/2021
